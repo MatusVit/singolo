@@ -92,3 +92,91 @@ a.item--active {
     height: 6px;
     background-color: #323746;
 }
+
+
+/* slider */
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #f06c64;
+}
+
+.slider-iphone {
+    position: relative;
+}
+
+.slider-iphone--vert {
+    top: 52px;
+    left: 112px;
+}
+
+.slider-iphone--horiz {
+    top: 53px;
+    left: 546px;
+}
+
+.slider-iphone img {
+    position: absolute;
+}
+
+.slider-iphone-img--horiz {
+    transform: rotate(90deg);
+}
+
+.slider-iphone-shadow--horiz {
+    transform: rotate(90deg) rotateX(180deg);
+}
+
+.slider-iphone-screen {
+    position: absolute;
+}
+
+.slider-iphone-screen--vert {
+    top: 65px;
+    left: 14px;
+    width: 188px;
+    height: 333px;
+    background-image: url(assets/slider-iphone-screen1.png);
+    background-position: top -134px left -14px;
+}
+
+.slider-iphone-screen--horiz {
+    top: 136px;
+    left: -62px;
+    height: 188px;
+    width: 333px;
+    background-image: url(assets/slider-iphone-screen2.png);
+    background-position: top 461px left 456px;
+}
+
+.slider-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #ea676b;
+}
+
+.chev--left {
+    position: absolute;
+    top: 47%;
+    width: 27px;
+    left: 36px;
+}
+
+.chev--right {
+    position: absolute;
+    top: 47%;
+    width: 27px;
+    right: 34px;
+}
+
+.chev--right img{
+    transform: rotate(180deg);
+}
+
+.chev:hover {
+    filter: hue-rotate(70deg) saturate(24);  
+}
