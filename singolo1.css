@@ -245,8 +245,7 @@ a.item--active {
     overflow: hidden;
     font-size: 12px;
     line-height: 23px;
-    word-spacing: 20px;
-    letter-spacing: -0.08px;
+    letter-spacing: -0.05px;
 }
 
 .section-bottom--services {
