@@ -6,6 +6,14 @@ body {
     background-color: dimgray;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #666d89;
+}
+
+p {
+    color: #767e9e;
+}
+
 .invisible {
     position: absolute;
     overflow: hidden;
@@ -18,7 +26,13 @@ body {
 .wrapper {
     width: 1020px;
     margin: auto;
+}
 
+.section-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
 }
 
 
@@ -85,11 +99,7 @@ a.item--active {
     color: #fbff00;
 }
 
-.header-bottom {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 6px;
+.section-bottom--header {
     background-color: #323746;
 }
 
@@ -151,14 +161,6 @@ a.item--active {
     background-position: top 461px left 456px;
 }
 
-.slider-bottom {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 6px;
-    background-color: #ea676b;
-}
-
 .chev--left {
     position: absolute;
     top: 47%;
@@ -180,3 +182,75 @@ a.item--active {
 .chev:hover {
     filter: hue-rotate(70deg) saturate(24);  
 }
+
+.section-bottom--slider {
+    background-color: #ea676b;
+}
+
+
+/* services */
+
+.services {
+    position: relative;
+    height: 440px;
+    padding: 61px 30px 0 30px;
+    background-color: #f2f2f2;
+}
+
+.section_title {
+    margin-top: 0;
+    margin-bottom: 18px;
+    padding: 0 10px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    /* color: #666d89; */
+}
+
+.section_text {
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.08px;
+    line-height: 30px;
+    /* color: #767e9e; */
+}
+
+.layout_3_column {
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service_block {
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.service_block-text {
+    margin-left: 20px;
+}
+
+.service_block-text h3 {
+    margin-top: -2px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.service_block-text p {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+
+
+
+.section-bottom--services {
+    margin-left: -30px;
+    background-color: #fff;
+}
+
