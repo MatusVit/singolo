@@ -239,9 +239,14 @@ a.item--active {
 
 .service_block-text p {
     margin-top: 8px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    width: 219px;
+    height: 63px;
+    overflow: hidden;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 23px;
+    word-spacing: 20px;
+    letter-spacing: -0.08px;
 }
 
 .section-bottom--services {
