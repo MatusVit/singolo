@@ -1,5 +1,5 @@
 /* front import */
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
 html {
   font-size: 10px;
 }
@@ -12,6 +12,81 @@ body {
 
 body {
   background-color: dimgray;
+}
+
+.wrapper {
+  max-width: 1020px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.section {
+  position: relative;
+}
+
+.section-wrapper {
+  padding: 61px 40px 67px 40px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #666d89;
+}
+
+.section-describe {
+  margin-bottom: 17px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #767e9e;
+}
+
+.section-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  width: 100%;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.tag {
+  margin-right: 7px;
+  padding: 3px 6px;
+  font-size: 1.2rem;
+  letter-spacing: 0.05px;
+  color: #767e9e;
+  cursor: pointer;
+}
+
+.tag_selected {
+  color: #dedede;
+  border: solid 1px #dedede;
+  border-radius: 5px;
+}
+
+.tag_bordered {
+  border: solid 1px #767e9e;
+  border-radius: 5px;
+}
+
+.portfolio {
+  background-color: #2d303a;
+}
+.portfolio .section-bottom {
+  background-color: #323746;
+}
+
+.about_us {
+  background-color: #f2f2f2;
+}
+.about_us .section-bottom {
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=singolo2.css.map */
