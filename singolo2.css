@@ -52,6 +52,10 @@ body {
   width: 100%;
 }
 
+.layout-3-column {
+  margin-top: 45px;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 0px;
@@ -164,6 +168,32 @@ body {
 }
 .about_us .section-bottom {
   background-color: #ffffff;
+}
+
+.block-member {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.member-img {
+  width: 300px;
+  height: 300px;
+}
+
+.member-img--photo1 {
+  background-image: url(../../assets/images/about_us-photo1.jpg);
+}
+
+.member-img--photo2 {
+  background-image: url(../../assets/images/about_us-photo2.jpg);
+}
+
+.member-img--photo3 {
+  background-image: url(../../assets/images/about_us-photo3.jpg);
+}
+
+.member-title {
+  margin-top: 16px;
 }
 
 /*# sourceMappingURL=singolo2.css.map */

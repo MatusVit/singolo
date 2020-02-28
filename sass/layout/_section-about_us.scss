@@ -1,7 +1,33 @@
 .about_us {
-    background-color: $color-bg-light;
-    
-    .section-bottom {
-        background-color: $color-bg-light-bottom;
-    }
+  background-color: $color-bg-light;
+
+  .section-bottom {
+    background-color: $color-bg-light-bottom;
+  }
+}
+
+.block-member {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.member-img {
+    width: 300px;
+    height: 300px; 
+}
+
+.member-img--photo1 {
+    background-image: url(../../assets/images/about_us-photo1.jpg);
+}
+
+.member-img--photo2 {
+    background-image: url(../../assets/images/about_us-photo2.jpg);
+}
+
+.member-img--photo3 {
+    background-image: url(../../assets/images/about_us-photo3.jpg);
+}
+
+.member-title {
+    margin-top: 16px;
 }
