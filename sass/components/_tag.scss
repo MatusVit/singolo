@@ -5,6 +5,12 @@
   letter-spacing: 0.05px;
   color: $color-text;
   cursor: pointer;
+  transition: all  ease-out 0.3s;
+  &:hover{
+    color: $color-accent;
+    border-color: $color-accent;
+  }
+
 }
 
 .tag_selected {

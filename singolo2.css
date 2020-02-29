@@ -70,6 +70,11 @@ body {
   letter-spacing: 0.05px;
   color: #767e9e;
   cursor: pointer;
+  transition: all ease-out 0.3s;
+}
+.tag:hover {
+  color: #fff78b;
+  border-color: #fff78b;
 }
 
 .tag_selected {
@@ -92,6 +97,7 @@ body {
 
 .images_container {
   margin-top: 22px;
+  height: 601px;
 }
 
 .layout-grid3x3 {
@@ -196,14 +202,16 @@ body {
 .member-title {
   margin-top: 16px;
   margin-bottom: 10px;
-  font-size: 17px;
+  height: 19px;
+  overflow: hidden;
+  font-size: 18px;
   font-weight: 900;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.3px;
   color: #666d89;
 }
 
 .member-description {
-  margin-top: 12px;
+  margin-top: 11px;
   font-size: 11px;
   line-height: 20px;
   letter-spacing: 0.39px;
@@ -211,19 +219,39 @@ body {
 }
 
 .social-tags_box {
-  margin-top: 23px;
+  margin-top: 25px;
   display: flex;
 }
 
 .social-tag {
-  margin-right: 7px;
-  width: 31px;
-  height: 31px;
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
   display: inline-flex;
   align-content: center;
   justify-content: center;
   border: solid 1px #767e9e;
   border-radius: 50%;
+  transition: all ease-out 0.3s;
+}
+.social-tag:hover {
+  background-color: #fff78b;
+}
+
+.social-tag--facebook {
+  background: no-repeat center url(../../assets/images/icon-facebook.svg);
+}
+
+.social-tag--google {
+  background: no-repeat center url(../../assets/images/icon-google+.svg);
+}
+
+.social-tag--twiter {
+  background: no-repeat center url(../../assets/images/icon-twiter.svg);
+}
+
+.social-tag--linkedin {
+  background: no-repeat center url(../../assets/images/icon-linkedin.svg);
 }
 
 /*# sourceMappingURL=singolo2.css.map */

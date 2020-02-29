@@ -30,14 +30,16 @@
 .member-title {
   margin-top: 16px;
   margin-bottom: 10px;
-  font-size: 17px;
+  height: 19px;
+  overflow: hidden;
+  font-size: 18px;
   font-weight: 900;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.3px;
   color: $color-title;
 }
 
 .member-description {
-  margin-top: 12px;
+  margin-top: 11px;
   font-size: 11px;
   line-height: 20px;
   letter-spacing: 0.39px;
@@ -45,17 +47,38 @@
 }
 
 .social-tags_box {
-  margin-top: 23px;
+  margin-top: 25px;
   display: flex;
 }
 
 .social-tag {
-  margin-right: 7px;
-  width: 31px;
-  height: 31px;
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
   display: inline-flex;
   align-content: center;
   justify-content: center;
   border: solid 1px $color-text;
   border-radius: 50%;
+  transition: all ease-out 0.3s;
+
+  &:hover {
+    background-color: $color-accent;
+  }
+}
+
+.social-tag--facebook {
+  background: no-repeat center url(../../assets/images/icon-facebook.svg);
+}
+
+.social-tag--google {
+  background: no-repeat center url(../../assets/images/icon-google+.svg);
+}
+
+.social-tag--twiter {
+  background: no-repeat center url(../../assets/images/icon-twiter.svg);
+}
+
+.social-tag--linkedin {
+  background: no-repeat center url(../../assets/images/icon-linkedin.svg);
 }
