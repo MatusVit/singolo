@@ -54,6 +54,8 @@ body {
 
 .layout-3-column {
   margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section-title {
@@ -172,7 +174,6 @@ body {
 
 .block-member {
   width: 300px;
-  margin-top: 20px;
 }
 
 .member-img {
@@ -194,6 +195,35 @@ body {
 
 .member-title {
   margin-top: 16px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  color: #666d89;
+}
+
+.member-description {
+  margin-top: 12px;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 0.39px;
+  color: #767e9e;
+}
+
+.social-tags_box {
+  margin-top: 23px;
+  display: flex;
+}
+
+.social-tag {
+  margin-right: 7px;
+  width: 31px;
+  height: 31px;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  border: solid 1px #767e9e;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=singolo2.css.map */

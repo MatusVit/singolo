@@ -8,26 +8,54 @@
 
 .block-member {
   width: 300px;
-  margin-top: 20px;
 }
 
 .member-img {
-    width: 300px;
-    height: 300px; 
+  width: 300px;
+  height: 300px;
 }
 
 .member-img--photo1 {
-    background-image: url(../../assets/images/about_us-photo1.jpg);
+  background-image: url(../../assets/images/about_us-photo1.jpg);
 }
 
 .member-img--photo2 {
-    background-image: url(../../assets/images/about_us-photo2.jpg);
+  background-image: url(../../assets/images/about_us-photo2.jpg);
 }
 
 .member-img--photo3 {
-    background-image: url(../../assets/images/about_us-photo3.jpg);
+  background-image: url(../../assets/images/about_us-photo3.jpg);
 }
 
 .member-title {
-    margin-top: 16px;
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  color: $color-title;
+}
+
+.member-description {
+  margin-top: 12px;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 0.39px;
+  color: $color-text;
+}
+
+.social-tags_box {
+  margin-top: 23px;
+  display: flex;
+}
+
+.social-tag {
+  margin-right: 7px;
+  width: 31px;
+  height: 31px;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  border: solid 1px $color-text;
+  border-radius: 50%;
 }
