@@ -1,11 +1,14 @@
-
 body {
     box-sizing: border-box;
     background-color: dimgray;
+    font-family: 'Lato', sans-serif;
 }
 
 .wrapper {
     max-width: 1020px;
     margin: 0 auto;
-    background-color: #fff;
+}
+
+p {
+    color: #767e9e;
 }

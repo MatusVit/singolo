@@ -1,0 +1,146 @@
+.slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #f06c64;
+}
+
+.slider-iphone {
+    position: relative;
+}
+
+.slider-iphone--vert {
+    top: 52px;
+    left: 112px;
+}
+
+.slider-iphone--horiz {
+    top: 53px;
+    left: 546px;
+}
+
+.slider-iphone img {
+    position: absolute;
+}
+
+.slider-iphone-img--horiz {
+    transform: rotate(90deg);
+}
+
+.slider-iphone-shadow--horiz {
+    transform: rotate(90deg) rotateX(180deg);
+}
+
+.slider-iphone-screen {
+    position: absolute;
+}
+
+.slider-iphone-screen--vert {
+    top: 65px;
+    left: 14px;
+    width: 188px;
+    height: 333px;
+    background-image: url(assets/slider-iphone-screen1.png);
+    background-position: top -134px left -14px;
+}
+
+.slider-iphone-screen--horiz {
+    top: 136px;
+    left: -62px;
+    height: 188px;
+    width: 333px;
+    background-image: url(assets/slider-iphone-screen2.png);
+    background-position: top 461px left 456px;
+}
+
+.chev--left {
+    position: absolute;
+    top: 47%;
+    width: 27px;
+    left: 36px;
+}
+
+.chev--right {
+    position: absolute;
+    top: 47%;
+    width: 27px;
+    right: 34px;
+}
+
+.chev--right img{
+    transform: rotate(180deg);
+}
+
+.chev:hover {
+    filter: hue-rotate(70deg) saturate(24);  
+}
+
+.section-bottom--slider {
+    background-color: #ea676b;
+}
+
+
+/* services */
+
+.services {
+    position: relative;
+    height: 440px;
+    padding: 61px 30px 0 30px;
+    background-color: #f2f2f2;
+}
+
+.section_title {
+    margin-top: 0;
+    margin-bottom: 18px;
+    padding: 0 10px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.section_text {
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.08px;
+    line-height: 30px;
+}
+
+.layout_3_column {
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service_block {
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.service_block-text {
+    margin-left: 20px;
+}
+
+.service_block-text h3 {
+    margin-top: -2px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.service_block-text p {
+    margin-top: 8px;
+    margin-bottom: 15px;
+    width: 219px;
+    height: 63px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: -0.05px;
+}
+
+.section-bottom--services {
+    margin-left: -30px;
+    background-color: #ffffff;
+}
