@@ -10,7 +10,7 @@
 .header {
     position: relative;
     height: 95px;
-    background-color: #2d303a;
+    background-color: $color-bg-dark;
 }
 
 .header-logo {
@@ -19,12 +19,12 @@
   left: 40px;  
   font-size: 24px;
   font-weight: 500;
-  color: #ffffff;
+  color: $color-logo;
 }
 
 .header-logo--color {
     margin-left: -4px;
-    color: #f06c64
+    color: $color-bg-section-quote;
 }
 
 .header-nav {
@@ -56,18 +56,18 @@
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $color-nav-item;
     text-decoration: none;
 }
 
 a.item--active {
-    color: #f06c64;
+    color: $color-active;
 } 
 
 .header-nav-list-item a:hover {
-    color: #fbff00;
+    color: $color-accent;
 }
 
 .section-bottom--header {
-    background-color: #323746;
+    background-color: $color-bg-dark-bottom;
 }
