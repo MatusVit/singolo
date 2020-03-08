@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singolo - 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="singolo3.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="section-quote">
+            <div class="section-wrapper">
+                <h2 class="section-title">Get a Quote</h2>
+                <p class="section-describe">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+                    mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
+                    dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+
+                <div class="layout-column layout-column--2">
+                    <div class="block_form">
+                        <form onsubmit="alert('submit!');return false" method="post" id="quote-form">
+                            <input class="form-field" type="text" name="field-name" id="field-name"
+                                placeholder="Name (Required)" required>
+                            <input class="form-field" type="email" name="field-email" id="field-email"
+                                placeholder="Email (Required)" required>
+                            <input class="form-field" type="text" name="field-subject" id="field-subject"
+                                placeholder="Subject">
+                            <textarea class="form-field form-textarea" name="field-describe" id="field-describe"
+                                cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+                            <button class="button button-form" type="submit" value="Submit">Submit</button>
+
+                        </form>
+                    </div>
+                    <div class="block_contact">
+                        <h3 class="block_contact-title">Contact Information</h3>
+                        <p class="block_contact-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
+                            Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
+                            faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                        <ul class="block_contact-list">
+                            <li>
+                                <div class="block_contact-list-item">
+                                    <div class="contact-icon contact-icon--location"></div>
+                                    <p class="contact-text">Elm St. 14/05 Lost City</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="block_contact-list-item" href="tel:+03528331835">
+                                    <div class="contact-icon contact-icon--phone"></div>
+                                    <p class="contact-text">03528 331 86 35</p>
+                                </a>
+                                </li>
+                            <li>
+                                <a class="block_contact-list-item" href="mailto:info@singolo.com">
+                                    <div class="contact-icon contact-icon--email"></div>
+                                    <p class="contact-text">info@singolo.com</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-bottom"></div>
+        </section>
+
+        <footer class="footer">
+            <div class="section-wrapper">
+                <p class="footer-copyright">
+                    © Copyright 2013
+                </p>
+                <div class="social-tags_box">
+                    <a class="social-tag social-tag--facebook" href="#"></a>
+                    <a class="social-tag social-tag--google" href="#"></a>
+                    <a class="social-tag social-tag--twiter" href="#"></a>
+                    <a class="social-tag social-tag--linkedin" href="#"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
