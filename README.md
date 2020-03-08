@@ -11,4 +11,3 @@ branch part-2 - https://github.com/MatusVit/singolo/tree/part-2
 
 #### part-3
 branch part-3 - https://github.com/MatusVit/singolo/tree/part-3
-
