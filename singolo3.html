@@ -21,7 +21,7 @@
 
                 <div class="layout-column layout-column--2">
                     <div class="block_form">
-                        <form action="" method="post">
+                        <form onsubmit="alert('submit!');return false" method="post" id="quote-form">
                             <input class="form-field" type="text" name="field-name" id="field-name"
                                 placeholder="Name (Required)" required>
                             <input class="form-field" type="email" name="field-email" id="field-email"
@@ -30,6 +30,7 @@
                                 placeholder="Subject">
                             <textarea class="form-field form-textarea" name="field-describe" id="field-describe"
                                 cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+                            <button class="button button-form" type="submit" value="Submit">Submit</button>
 
                         </form>
                     </div>
@@ -39,17 +40,23 @@
                             Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus
                             faucibus. Morbi at aliquet turpis, et consequat felis.</p>
                         <ul class="block_contact-list">
-                            <li class="block_contact-list-item">
-                                <div class="contact-icon contact-icon--location"></div>
-                                <p class="contact-text">Elm St. 14/05 Lost City</p>
+                            <li>
+                                <div class="block_contact-list-item">
+                                    <div class="contact-icon contact-icon--location"></div>
+                                    <p class="contact-text">Elm St. 14/05 Lost City</p>
+                                </div>
                             </li>
-                            <li class="block_contact-list-item">
-                                <div class="contact-icon contact-icon--phone"></div>
-                                <p class="contact-text">03528 331 86 35</p>
-                            </li>
-                            <li class="block_contact-list-item">
-                                <div class="contact-icon contact-icon--email"></div>
-                                <p class="contact-text">info@singolo.com</p>
+                            <li>
+                                <a class="block_contact-list-item" href="tel:+03528331835">
+                                    <div class="contact-icon contact-icon--phone"></div>
+                                    <p class="contact-text">03528 331 86 35</p>
+                                </a>
+                                </li>
+                            <li>
+                                <a class="block_contact-list-item" href="mailto:info@singolo.com">
+                                    <div class="contact-icon contact-icon--email"></div>
+                                    <p class="contact-text">info@singolo.com</p>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -62,7 +69,7 @@
         <footer class="footer">
             <div class="section-wrapper">
                 <p class="footer-copyright">
-                   © Copyright 2013
+                    © Copyright 2013
                 </p>
                 <div class="social-tags_box">
                     <a class="social-tag social-tag--facebook" href="#"></a>

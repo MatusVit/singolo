@@ -170,7 +170,7 @@ h3 {
   background-color: #f06c64;
 }
 .section-quote .section-wrapper {
-  padding-bottom: 56px;
+  padding-bottom: 18px;
 }
 .section-quote .section-title {
   color: #f0d8d9;
@@ -192,18 +192,41 @@ h3 {
 .form-field {
   margin-bottom: 14px;
   width: 590px;
-  padding: 13px 14px;
+  padding: 12px 14px;
   background-color: #d6564f;
-  border: none;
+  border: solid 1px #d6564f;
   border-radius: 5px;
   font-size: 12px;
+  color: #f0d8d9;
 }
 .form-field.form-textarea {
-  height: 178px;
+  margin-top: 1px;
+  padding: 8px 14px;
+  height: 186px;
   resize: none;
+  line-height: 21.5px;
 }
 .form-field::placeholder {
   color: #f48c8f;
+}
+.form-field:focus {
+  outline: none;
+  border: solid 1px #f0d8d9;
+  border-radius: 5px;
+}
+
+.button-form {
+  padding: 9px 16px;
+  color: #f0d8d9;
+  border: solid 1px #f0d8d9;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  transition: all ease-out 0.3s;
+}
+.button-form:hover {
+  color: #fff78b;
+  background: #d6564f;
 }
 
 .block_contact {
@@ -230,10 +253,16 @@ h3 {
   font-size: 12px;
   line-height: 21.56px;
 }
+.block_contact-list a:hover {
+  color: #fff78b;
+}
 
 .block_contact-list-item {
   display: flex;
   align-items: baseline;
+  text-decoration: none;
+  color: #f0d8d9;
+  transition: all ease-out 0.3s;
 }
 
 .contact-icon {
@@ -266,7 +295,7 @@ h3 {
   color: #666d89;
 }
 .footer .section-wrapper {
-  padding: 20px 40px 20px;
+  padding: 19px 40px 20px;
   display: flex;
   justify-content: space-between;
 }

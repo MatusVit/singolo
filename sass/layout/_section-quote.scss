@@ -3,7 +3,7 @@
   background-color: $color-bg-section-quote;
 
   .section-wrapper {
-      padding-bottom: 56px;
+      padding-bottom: 18px;
   }
   
   
@@ -32,19 +32,44 @@
 .form-field {
     margin-bottom: 14px;
     width: 590px;
-    padding: 13px 14px;
+    padding: 12px 14px;
     background-color: $color-form-field;
-    border: none;
+    border: solid 1px $color-form-field;
     border-radius: 5px;
     font-size: 12px;
+    color: $color-text-section-quote;
 
     &.form-textarea {
-        height: 178px;
+        margin-top: 1px;
+        padding: 8px 14px;
+        height: 186px;
         resize: none;
+        line-height: 21.5px;
     }
 
     &::placeholder {
         color: $color-form-placeholder;
+    }
+
+    &:focus{
+        outline: none;
+        border: solid 1px $color-text-section-quote;
+        border-radius: 5px;
+    }
+}
+
+.button-form {
+    padding: 9px 16px;
+    color: $color-text-section-quote;
+    border: solid 1px $color-text-section-quote;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    transition: all ease-out 0.3s;
+
+    &:hover {
+        color: $color-accent;
+        background: $color-form-field;
     }
 }
 
@@ -72,11 +97,19 @@
     list-style: none;
     font-size: 12px;
     line-height: 21.56px;
+    
+    a:hover {
+        color: $color-accent;
+    }
 }
 
 .block_contact-list-item {
     display: flex;
     align-items: baseline;
+    text-decoration: none;
+    color: $color-text-section-quote;
+    transition: all ease-out 0.3s;
+
 }
 
 .contact-icon {
