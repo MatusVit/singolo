@@ -266,12 +266,17 @@ h3 {
   color: #666d89;
 }
 .footer .section-wrapper {
+  padding: 20px 40px 20px;
   display: flex;
   justify-content: space-between;
 }
 
+.footer-copyright {
+  font-size: 12px;
+}
+
 .social-tags_box {
-  margin-top: 25px;
+  margin-top: 3px;
   display: flex;
 }
 
@@ -285,6 +290,9 @@ h3 {
   border: solid 1px #767e9e;
   border-radius: 50%;
   transition: all ease-out 0.3s;
+}
+.social-tag:last-child {
+  margin-right: 0;
 }
 .social-tag:hover {
   background-color: #fff78b;
