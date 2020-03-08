@@ -1,0 +1,25 @@
+.tag {
+  margin-right: 7px;
+  padding: 3px 6px;
+  font-size: 1.2rem;
+  letter-spacing: 0.05px;
+  color: $color-text;
+  cursor: pointer;
+  transition: all  ease-out 0.3s;
+  &:hover{
+    color: $color-accent;
+    border-color: $color-accent;
+  }
+
+}
+
+.tag_selected {
+  color: $color-tag-selected;
+  border: solid 1px $color-tag-selected;
+  border-radius: 5px;
+}
+
+.tag_bordered {
+  border: solid 1px $color-text;
+  border-radius: 5px;
+}

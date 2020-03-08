@@ -1,0 +1,37 @@
+.section {
+  position: relative;
+}
+
+.section-wrapper {
+  padding: 61px 40px 73px 40px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 900;
+  color: $color-title;
+}
+
+.section-describe {
+  margin-top: 19px;
+  margin-bottom: 11px;  
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: $color-text;
+}
+
+.section-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  width: 100%;
+}
+
+.layout-3-column {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
