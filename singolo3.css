@@ -169,6 +169,9 @@ h3 {
   position: relative;
   background-color: #f06c64;
 }
+.section-quote .section-wrapper {
+  padding-bottom: 56px;
+}
 .section-quote .section-title {
   color: #f0d8d9;
 }
@@ -178,31 +181,29 @@ h3 {
 .section-quote .section-bottom {
   background-color: #ea676b;
 }
+.section-quote .layout-column--2 {
+  margin-top: 42px;
+}
 
 .block_form {
   flex-basis: 620px;
 }
 
 .form-field {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   width: 590px;
-  padding: 14px 15px;
+  padding: 13px 14px;
   background-color: #d6564f;
   border: none;
   border-radius: 5px;
   font-size: 12px;
 }
 .form-field.form-textarea {
-  height: 202px;
+  height: 178px;
   resize: none;
 }
 .form-field::placeholder {
   color: #f48c8f;
-}
-
-.form-textarea {
-  height: 202px;
-  resize: none;
 }
 
 .block_contact {
@@ -210,13 +211,20 @@ h3 {
   color: #f0d8d9;
 }
 
+.block_contact-title {
+  margin-bottom: 9px;
+}
+
 .block_contact-text {
+  margin: 9px 0;
   font-size: 12px;
-  line-height: 21.56px;
+  line-height: 21.5px;
+  letter-spacing: 0.1px;
   text-align: justify;
 }
 
 .block_contact-list {
+  margin-top: 24px;
   padding: 0;
   list-style: none;
   font-size: 12px;
@@ -225,22 +233,23 @@ h3 {
 
 .block_contact-list-item {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
 }
 
 .contact-icon {
-  width: 20px;
-  height: 15px;
+  width: 23px;
 }
 
 .contact-icon--location {
   height: 11px;
   background: no-repeat url(../../assets/images/icon-contact-location.svg);
+  background-position: 2px 0;
 }
 
 .contact-icon--phone {
   height: 11px;
   background: no-repeat url(../../assets/images/icon-contact-phone.svg);
+  background-position: 1px 0;
 }
 
 .contact-icon--email {
