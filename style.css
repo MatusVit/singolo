@@ -183,7 +183,10 @@ h3 {
 }
 
 .header {
-  position: relative;
+  /* position: relative; */
+  position: sticky;
+  top: 0px;
+  z-index: 3;
   height: 95px;
   background-color: #2d303a;
 }
