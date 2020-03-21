@@ -278,7 +278,7 @@ a.nav-item--active {
   background-color: #323746;
 }
 
-.slider {
+.section-slider {
   position: relative;
   width: 100%;
   height: 600px;
@@ -401,7 +401,7 @@ a.nav-item--active {
   background-color: #ea676b;
 }
 
-.services {
+.section-services {
   position: relative;
   height: 440px;
   padding: 61px 30px 0 30px;
@@ -464,10 +464,10 @@ a.nav-item--active {
   background-color: #ffffff;
 }
 
-.portfolio {
+.section-portfolio {
   background-color: #2d303a;
 }
-.portfolio .section-bottom {
+.section-portfolio .section-bottom {
   background-color: #323746;
 }
 
@@ -547,10 +547,10 @@ a.nav-item--active {
   background-position: -36px -60px;
 }
 
-.about_us {
+.section-about_us {
   background-color: #f2f2f2;
 }
-.about_us .section-bottom {
+.section-about_us .section-bottom {
   background-color: #ffffff;
 }
 

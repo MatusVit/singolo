@@ -1,20 +1,38 @@
 
-window.onload = function(){
+window.onload = function () {
     console.log('Working!!!');
-    
+
     //header-nav
-    addHeaderNavClickHandler();
+    // addHeaderNavClickHandler();
+    addHeaderNavScrollHandler();
 
     //Slider  
     addSliderControlClickHandler();
-     
+
+}
+
+const addHeaderNavScrollHandler = () => {
+    const sections = document.querySelectorAll('section');
+
+    document.addEventListener('scroll', () => {
+        const currentPosition = window.scrollY + 95;
+        sections.forEach((elm) => {
+            if (elm.offsetTop <= currentPosition
+                && (elm.offsetTop + elm.offsetHeight) > currentPosition) {
+                    removeActiveTags('.header-nav-list .nav-item', 'nav-item--active');
+                    const clickedTag = document.querySelector(`.nav-item[href="#anchor-${elm.getAttribute('id')}"]`);
+                    addActiveTag(clickedTag, 'nav-item--active');    
+            }
+        })
+
+    });
 }
 
 
 const addHeaderNavClickHandler = () => {
     document.querySelector('.header-nav-list').addEventListener('click', (e) => {
         if (e.target.classList.contains('nav-item')) {
-            let clickedTag = e.target;     
+            let clickedTag = e.target;
             removeActiveTags('.header-nav-list .nav-item', 'nav-item--active');
             addActiveTag(clickedTag, 'nav-item--active');
         }
@@ -25,7 +43,7 @@ const removeActiveTags = (selectorList, selectorTag) => {
     let tags = document.querySelectorAll(selectorList);
     tags.forEach(tag => {
         tag.classList.remove(selectorTag);
-    });    
+    });
 }
 
 const addActiveTag = (clickedTag, selectorTag) => {
@@ -34,14 +52,14 @@ const addActiveTag = (clickedTag, selectorTag) => {
 
 
 
- 
+
 
 const addSliderControlClickHandler = () => {
     document.querySelector('.chev--left').addEventListener('click', (e) => {
         let clickedTag = e.currentTarget;
         // TODO function move left
         console.log(clickedTag);
-        
+
     });
 
     document.querySelector('.chev--right').addEventListener('click', (e) => {
