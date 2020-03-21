@@ -190,16 +190,17 @@ h3 {
   border-color: #fff78b;
 }
 
-.tag_selected {
+.tag_bordered {
+  border: solid 1px #767e9e;
+  border-radius: 5px;
+}
+
+.tag--active {
   color: #dedede;
   border: solid 1px #dedede;
   border-radius: 5px;
 }
 
-.tag_bordered {
-  border: solid 1px #767e9e;
-  border-radius: 5px;
-}
 
 .invisible {
   position: absolute;
@@ -287,6 +288,16 @@ a.nav-item--active {
 
 .slider-screen {
   animation: 500ms ease-in-out;
+}
+
+.slider-screen-1 {
+  transform: translateX(0px);
+}
+
+
+.slider-screen-2{
+  visibility: hidden;
+  transform: translateX(0px);
 }
 
 .to-left {
