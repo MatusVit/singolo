@@ -283,22 +283,38 @@ a.nav-item--active {
   position: relative;
   width: 100%;
   height: 600px;
-  background-color: #f06c64;
+}
+
+.slider-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .slider-screen {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
   animation: 500ms ease-in-out;
 }
 
+.slider-active {
+  display: block;
+}
+
+.slider-next {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .slider-screen-1 {
-  transform: translateX(0px);
+  background-color: #f06c64;
 }
 
-
-.slider-screen-2{
-  visibility: hidden;
-  transform: translateX(0px);
-}
 
 .to-left {
   animation-name: left;
