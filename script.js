@@ -19,7 +19,7 @@ window.onload = function () {
 const addPhoneClickHandler = () => {
     document.querySelector('.slider-screen-1').addEventListener('click', (e) => {
         if (e.target.classList.contains('slider-iphone-img')) {
-            const iphoneScreen =  e.target.nextElementSibling;
+            const iphoneScreen = e.target.nextElementSibling;
             console.log(iphoneScreen);
             if (iphoneScreen.classList.contains('slider-iphone-screen--black')) {
                 iphoneScreen.classList.remove('slider-iphone-screen--black');
@@ -38,9 +38,23 @@ const addPortfolioTagsClickHandler = () => {
             let clickedTag = e.target;
             removeActiveTags('.portfolio-tags .tag', 'tag--active');
             addActiveTag(clickedTag, 'tag--active');
-            // TODO function mix-images
+            shearElementPortfolio();
         }
     });
+}
+
+const shearElementPortfolio = () => {
+    const imgBlockList = document.querySelectorAll('.img-block');
+    const arrayImgBlock = [...imgBlockList].sort(shuffledArray);
+    imgBlockList.forEach((block) => block.remove());
+    const grid = document.querySelector('.layout-grid3x3');
+    arrayImgBlock.forEach((block) => {
+        grid.append(block);
+    });
+}
+
+const shuffledArray = () => {
+    return Math.random() - 0.5;
 }
 
 

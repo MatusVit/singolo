@@ -368,6 +368,9 @@ a.nav-item--active {
 
 .slider-iphone img {
   position: absolute;
+}
+
+.slider-iphone-img {
   cursor: pointer;
 }
 
@@ -519,6 +522,8 @@ a.nav-item--active {
 .img-block {
   background-color: gray;
 }
+
+
 
 .portfolio-img01 {
   background-image: url(assets/images/portfolio-img01.jpg);
