@@ -7,13 +7,29 @@ window.onload = function () {
 
     //slider  
     addSliderControlClickHandler();
-   
+    addPhoneClickHandler();
+
     //portfolio
     addPortfolioTagsClickHandler();
 
 
 
 }
+
+const addPhoneClickHandler = () => {
+    document.querySelector('.slider-screen-1').addEventListener('click', (e) => {
+        if (e.target.classList.contains('slider-iphone-img')) {
+            const iphoneScreen =  e.target.nextElementSibling;
+            console.log(iphoneScreen);
+            if (iphoneScreen.classList.contains('slider-iphone-screen--black')) {
+                iphoneScreen.classList.remove('slider-iphone-screen--black');
+            } else {
+                iphoneScreen.classList.add('slider-iphone-screen--black');
+            }
+        }
+    });
+}
+
 
 const addPortfolioTagsClickHandler = () => {
     const tagsList = document.querySelector('.portfolio-tags');
@@ -92,14 +108,14 @@ const addSliderControlClickHandler = () => {
     const hideScreen = (direction) => {
         isEnabled = false;
         sliderScreens[currentScreen].classList.add(direction);
-        sliderScreens[currentScreen].addEventListener('animationend', function() {
+        sliderScreens[currentScreen].addEventListener('animationend', function () {
             this.classList.remove('slider-active', direction);
         });
     }
 
     const showScreen = (direction) => {
         sliderScreens[currentScreen].classList.add('slider-next', direction);
-        sliderScreens[currentScreen].addEventListener('animationend', function() {
+        sliderScreens[currentScreen].addEventListener('animationend', function () {
             this.classList.remove('slider-next', direction);
             this.classList.add('slider-active');
             isEnabled = true;

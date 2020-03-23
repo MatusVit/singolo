@@ -368,6 +368,7 @@ a.nav-item--active {
 
 .slider-iphone img {
   position: absolute;
+  cursor: pointer;
 }
 
 .slider-iphone-img--horiz {
@@ -398,6 +399,11 @@ a.nav-item--active {
   width: 333px;
   background-image: url(assets/images/slider-iphone-screen2.png);
   background-position: top 461px left 456px;
+}
+
+.slider-iphone-screen--black {
+  background-color: #2d303a;
+  background-image: none;
 }
 
 .chev {
