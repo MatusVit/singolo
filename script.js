@@ -11,9 +11,30 @@ window.onload = function () {
 
     //portfolio
     addPortfolioTagsClickHandler();
-    addPortfolioImageClickHandler()
+    addPortfolioImageClickHandler();
 
+    //quote
+    addQuoteFormHandler();
 }
+
+const addQuoteFormHandler = () => {
+    const quoteForm = document.getElementById('quote-form');
+    // const fieldName = document.getElementById('field-name');
+    // const fieldEmail = document.getElementById('field-email');
+    const fieldSubject = document.getElementById('field-subject');
+    const fieldDescribe = document.getElementById('field-describe');
+    quoteForm.addEventListener('submit', (e) => {
+        let valSubject = 'Без темы';
+        let valDescribe = 'Без описания';
+        if (fieldSubject.value) valSubject = `Тема: ${fieldSubject.value}`;
+        if (fieldDescribe.value) valDescribe = `Тема: ${fieldDescribe.value}`;
+        const massage = `Письмо отправлено\n${valSubject}\n${valDescribe}`;
+        alert (massage);
+        e.preventDefault();
+        quoteForm.reset();
+    });
+}
+
 
 const addPortfolioImageClickHandler = () => {
     const imagesContainer = document.querySelector('.images_container');
