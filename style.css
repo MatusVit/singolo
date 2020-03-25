@@ -87,7 +87,7 @@
 html {
   font-size: 10px;
   scroll-margin-top: 95px;
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth;
 }
 
 body {
@@ -201,7 +201,6 @@ h3 {
   border-radius: 5px;
 }
 
-
 .invisible {
   position: absolute;
   overflow: hidden;
@@ -314,7 +313,6 @@ a.nav-item--active {
 .slider-screen-1 {
   background-color: #f06c64;
 }
-
 
 .to-left {
   animation-name: left;
@@ -521,68 +519,72 @@ a.nav-item--active {
 
 .img-block {
   background-color: gray;
+  box-sizing: border-box;
+  border: 5px solid transparent;
 }
 
+.img-block--border {
+  border: 5px solid #F06C64;
+}
 
-
-.portfolio-img01 {
+.img-block.portfolio-img01 {
   background-image: url(assets/images/portfolio-img01.jpg);
-  background-position: -9px -11px;
+  background-position: -14px -16px;
 }
 
 .portfolio-img02 {
   background-image: url(assets/images/portfolio-img02.jpg);
-  background-position: -82px -43px;
+  background-position: -87px -48px;
 }
 
 .portfolio-img03 {
   background-image: url(assets/images/portfolio-img03.jpg);
-  background-position: -11px -1px;
+  background-position: -16px -6px;
 }
 
 .portfolio-img04 {
   background-image: url(assets/images/portfolio-img04.jpg);
-  background-position: -25px -2px;
+  background-position: -30px -7px;
 }
 
 .portfolio-img05 {
   background-image: url(assets/images/portfolio-img05.jpg);
-  background-position: -9px -16px;
+  background-position: -14px -21px;
 }
 
 .portfolio-img06 {
   background-image: url(assets/images/portfolio-img06.jpg);
-  background-position: -16px -4px;
+  background-position: -12px -9px;
 }
 
 .portfolio-img07 {
   background-image: url(assets/images/portfolio-img07.jpg);
-  background-position: -30px -39px;
+  background-position: -35px -44px;
 }
 
 .portfolio-img08 {
   background-image: url(assets/images/portfolio-img08.jpg);
-  background-position: -24px -32px;
+  background-position: -29px -37px;
 }
 
 .portfolio-img09 {
   background-image: url(assets/images/portfolio-img09.jpg);
-  background-position: -16px -2px;
+  background-position: -21px -7px;
 }
 
 .portfolio-img10 {
   background-image: url(assets/images/portfolio-img10.jpg);
-  background-position: -141px -114px;
+  background-position: -146px -119px;
 }
 
 .portfolio-img11 {
   background-image: url(assets/images/portfolio-img11.jpg);
-  background-position: -144px -175px;
+  background-position: -149px -180px;
 }
 
 .portfolio-img12 {
   background-image: url(assets/images/portfolio-img12.jpg);
-  background-position: -36px -60px;
+  background-position: -41px -65px;
 }
 
 .section-about_us {
@@ -657,7 +659,7 @@ a.nav-item--active {
 }
 
 .social-tag--google {
-  background: no-repeat center url(assets/images/icon-google+.svg);
+  background: no-repeat center url(assets/images/icon-google + .svg);
 }
 
 .social-tag--twiter {

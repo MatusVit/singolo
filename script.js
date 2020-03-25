@@ -11,9 +11,23 @@ window.onload = function () {
 
     //portfolio
     addPortfolioTagsClickHandler();
+    addPortfolioImageClickHandler()
 
+}
 
-
+const addPortfolioImageClickHandler = () => {
+    const imagesContainer = document.querySelector('.images_container');
+    imagesContainer.addEventListener('click', (e) => {
+        if (e.target.classList.contains('img-block')) {
+            let clickedImg = e.target;
+            if (clickedImg.classList.contains('img-block--border')) {
+                clickedImg.classList.toggle('img-block--border')
+            } else {
+                removeActiveTags('.img-block', 'img-block--border');
+                addActiveTag(clickedImg, 'img-block--border');
+            }
+        }
+    });
 }
 
 const addPhoneClickHandler = () => {
