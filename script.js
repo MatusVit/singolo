@@ -1,7 +1,5 @@
 
 window.onload = function () {
-    console.log('Working!!!');
-
     //header-nav
     addHeaderNavScrollHandler();
 
@@ -19,8 +17,6 @@ window.onload = function () {
 
 const addQuoteFormHandler = () => {
     const quoteForm = document.getElementById('quote-form');
-    // const fieldName = document.getElementById('field-name');
-    // const fieldEmail = document.getElementById('field-email');
     const fieldSubject = document.getElementById('field-subject');
     const fieldDescribe = document.getElementById('field-describe');
     quoteForm.addEventListener('submit', (e) => {
@@ -55,7 +51,6 @@ const addPhoneClickHandler = () => {
     document.querySelector('.slider-screen-1').addEventListener('click', (e) => {
         if (e.target.classList.contains('slider-iphone-img')) {
             const iphoneScreen = e.target.nextElementSibling;
-            console.log(iphoneScreen);
             if (iphoneScreen.classList.contains('slider-iphone-screen--black')) {
                 iphoneScreen.classList.remove('slider-iphone-screen--black');
             } else {

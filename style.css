@@ -91,15 +91,10 @@ html {
 }
 
 body {
+  box-sizing: border-box;
   font-size: 1.6rem;
   font-family: "Lato", "Verdana", sans-serif;
   background-color: dimgray;
-}
-
-body {
-  box-sizing: border-box;
-  background-color: dimgray;
-  font-family: "Lato", sans-serif;
 }
 
 .wrapper {
@@ -211,7 +206,6 @@ h3 {
 }
 
 .header {
-  /* position: relative; */
   position: sticky;
   top: 0px;
   z-index: 3;
@@ -352,16 +346,18 @@ a.nav-item--active {
 
 .slider-iphone {
   position: relative;
+  width: auto;
+  height: auto;
 }
 
 .slider-iphone--vert {
-  top: 52px;
-  left: 112px;
+  top: 9%;
+  left: 11%;
 }
 
 .slider-iphone--horiz {
-  top: 53px;
-  left: 546px;
+  top: 9%;
+  left: 53.5%;
 }
 
 .slider-iphone img {
@@ -391,6 +387,7 @@ a.nav-item--active {
   height: 333px;
   background-image: url(assets/images/slider-iphone-screen1.png);
   background-position: top -134px left -14px;
+  background-size: 309%;
 }
 
 .slider-iphone-screen--horiz {
@@ -400,6 +397,7 @@ a.nav-item--active {
   width: 333px;
   background-image: url(assets/images/slider-iphone-screen2.png);
   background-position: top 461px left 456px;
+  background-size: 176%;
 }
 
 .slider-iphone-screen--black {
@@ -849,6 +847,58 @@ a.block_contact-list-item:hover .contact-text {
 
 .social-tag--linkedin {
   background: no-repeat center url(assets/images/icon-linkedin.svg);
+}
+
+@media (max-width: 1019px){
+  .section-slider {
+    height: 58.82vw;
+  }
+
+  .slider-iphone--vert .slider-iphone-shadow {
+    height: 47.4vw;
+  }
+
+  .slider-iphone-img.slider-iphone-img--vert {
+    height: 44.8vw;
+  }
+
+  .slider-iphone-screen.slider-iphone-screen--vert {
+    top: 6.37vw;
+    left: 1.37vw;
+    width: 18.43vw;
+    height: 32.65vw;
+    background-position: top -13.14vw left -1.37vw;   
+  }
+
+  .slider-iphone-shadow--horiz {
+    height: 47.4vw;
+  }
+
+  .slider-iphone-img.slider-iphone-img--horiz {
+    height: 44.8vw;
+  }
+
+  .slider-iphone-screen.slider-iphone-screen--horiz {
+    top: 13.33vw;
+    left: -6.08vw;
+    height: 18.43vw;
+    width: 32.65vw;
+    background-position: top 45.2vw left 44.71vw;
+  }
+
+  .slider-screen-2 img {
+    height: 58.24vw;
+  }
+
+
+}
+
+@media (max-width: 767px){
+
+}
+
+@media (max-width: 374px){
+
 }
 
 /*# sourceMappingURL=style.css.map */
