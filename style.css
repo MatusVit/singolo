@@ -851,6 +851,7 @@ a.block_contact-list-item:hover .contact-text {
   background: no-repeat center url(assets/images/icon-linkedin.svg);
 }
 
+/* Tablet */
 @media (max-width: 1019px) {
   .section-slider {
     height: 58.82vw;
@@ -902,10 +903,8 @@ a.block_contact-list-item:hover .contact-text {
   }
 
   .service_block {
-    /* width: 45%; */
     width: 320px;
   }
-
 
   .section-portfolio .images_container {
     height: auto;
@@ -948,6 +947,8 @@ a.block_contact-list-item:hover .contact-text {
   }
 }
 
+
+/* mobile */
 @media (max-width: 767px) {
   .section-bottom {
     display: none;
@@ -959,8 +960,9 @@ a.block_contact-list-item:hover .contact-text {
 
   .header-logo {
     position: static;
-    text-align: center;
     padding-top: 23px;
+    text-align: center;
+    font-size: 19.6875px;
   }
 
   .header-nav {
@@ -1064,7 +1066,25 @@ a.block_contact-list-item:hover .contact-text {
   }
 }
 
-@media (max-width: 374px) {
-}
 
+/* Mobile-320 */
+@media (max-width: 374px) {
+  .wrapper {
+    min-width: 320px;
+  }
+
+  .service_block {
+    width: auto;
+    min-width: 260px;
+  }
+
+  .service_block-text p {
+    width: 100%;
+  }
+
+  .portfolio-tags .tag {
+    display: inline-block;
+    margin-top: 11px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
