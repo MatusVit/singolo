@@ -525,7 +525,7 @@ a.nav-item--active {
   border: 5px solid #f06c64;
 }
 
-.img-block.portfolio-img01 {
+.portfolio-img01 {
   background-image: url(assets/images/portfolio-img01.jpg);
   background-position: -14px -16px;
 }
@@ -693,8 +693,9 @@ a.nav-item--active {
 }
 
 .form-field {
+  box-sizing: border-box;
   margin-bottom: 14px;
-  width: 590px;
+  width: 100%;
   padding: 12px 14px;
   background-color: #d6564f;
   border: solid 1px #d6564f;
@@ -890,9 +891,19 @@ a.block_contact-list-item:hover .contact-text {
     height: 58.24vw;
   }
 
-  .section-services .layout_3_column {
-    justify-content: space-around;
+  .section-services {
+    height: auto;
+    padding-bottom: 64px;
   }
+
+  .section-services .layout_3_column {
+    justify-content: space-between;
+  }
+
+  .service_block {
+    width: 45%;
+  }
+
 
   .section-portfolio .images_container {
     height: auto;
@@ -900,11 +911,58 @@ a.block_contact-list-item:hover .contact-text {
 
   .section-portfolio .layout-grid3x3 {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 18.33vw);
+    grid-template-rows: repeat(4, 25vw);
+  }
+
+  .img-block {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+  }
+
+  .section-about_us .block-member {
+    width: 28.7vw;
+  }
+
+  .member-img {
+    width: 100%;
+    height: 28.7vw;
+    background-size: cover;
+
+  }
+
+  .block_form {
+    flex-basis: 65.97%;
+  }
+
+  .form-field {
+    width: 100%;
+  }
+
+  .block_contact {
+    flex-basis: 31.91%;
   }
 }
 
 @media (max-width: 767px) {
+  .section-bottom {
+    display: none;
+  }
+
+  .header {
+    height: 71px;    
+  }
+
+  .header-logo {
+    position: static;
+    text-align: center;
+    padding-top: 23px;
+  }
+
+  .header-nav {
+    display: none;
+  }
 }
 
 @media (max-width: 374px) {
