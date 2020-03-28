@@ -2,6 +2,7 @@
 window.onload = function () {
     //header-nav
     addHeaderNavScrollHandler();
+    addBurgerMenuHandler();
 
     //slider  
     addSliderControlClickHandler();
@@ -14,6 +15,23 @@ window.onload = function () {
     //quote
     addQuoteFormHandler();
 }
+
+const addBurgerMenuHandler = () => {
+    const burgerMenu = document.querySelector('.burger_menu');
+    const burgerButton = document.querySelector('.burger_menu-button');
+    const headerNav = document.querySelector('.header-nav');
+    burgerButton.addEventListener('click', (e) => {
+
+        burgerButton.classList.toggle('burger_menu--enable');
+        burgerMenu.classList.toggle('burger_menu--enable');
+        headerNav.classList.toggle('burger_menu--enable');
+
+    });
+}
+
+
+
+
 
 const addQuoteFormHandler = () => {
     const quoteForm = document.getElementById('quote-form');
