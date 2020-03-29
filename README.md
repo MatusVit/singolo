@@ -1,6 +1,6 @@
 # singolo
 #### gh-pages 
-https://matusvit.github.io/singolo/index.htm
+https://matusvit.github.io/singolo/index.html
 
 branch gh-pages - https://github.com/MatusVit/singolo/tree/gh-pages
 
