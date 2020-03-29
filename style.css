@@ -301,11 +301,16 @@ a.nav-item--active {
   position: fixed;
   width: 278px;
   height: 100vh;
-  left: 0px;
+  left: -300px;
   top: 0px;
   background: #2D303A;
   box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
   z-index: 51;
+  transition: all ease-out 0.3s;
+}
+
+.burger_menu.burger_menu--enable .burger_menu-panel {
+  left: 0px;
 }
 
 .burger_menu .header-logo--burger_menu {
@@ -1031,22 +1036,23 @@ a.block_contact-list-item:hover .contact-text {
 
   .header-nav {
     visibility: hidden;
-    /* display: none; */
-
     top: 0;
-    left: 0;
+    left: -250px;
     height: 100vh;
     width: 278px;
     z-index: 53;
+    transition: all ease-out 0.3s;
   }
 
   .burger_menu-button {
     visibility: visible;
+    transition: all ease-out 0.3s; 
   }
 
   
   .header-nav.burger_menu--enable {
     visibility: visible;
+    left: 0px;
   }
 
   .header-nav-list {

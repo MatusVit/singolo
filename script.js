@@ -20,18 +20,30 @@ const addBurgerMenuHandler = () => {
     const burgerMenu = document.querySelector('.burger_menu');
     const burgerButton = document.querySelector('.burger_menu-button');
     const headerNav = document.querySelector('.header-nav');
+    let isEnabledMenu = false;
     burgerButton.addEventListener('click', (e) => {
+        toggleBurgerMenu();
+    });
 
+    headerNav.addEventListener('click', (e) => {
+        if (isEnabledMenu && e.target.classList.contains('nav-item')) {
+            toggleBurgerMenu();
+        };
+    });
+
+    burgerMenu.addEventListener('click', (e) => {
+        if (isEnabledMenu && e.target.classList.contains('menu-overlay')) {
+            toggleBurgerMenu();
+        };
+    });
+
+    const toggleBurgerMenu = () => {
+        isEnabledMenu = !isEnabledMenu;
         burgerButton.classList.toggle('burger_menu--enable');
         burgerMenu.classList.toggle('burger_menu--enable');
         headerNav.classList.toggle('burger_menu--enable');
-
-    });
+    };
 }
-
-
-
-
 
 const addQuoteFormHandler = () => {
     const quoteForm = document.getElementById('quote-form');
@@ -116,6 +128,7 @@ const addHeaderNavScrollHandler = () => {
                 && (elm.offsetTop + elm.offsetHeight) > currentPosition) {
                 removeActiveTags('.header-nav-list .nav-item', 'nav-item--active');
                 const clickedTag = document.querySelector(`.nav-item[href="#anchor-${elm.getAttribute('id')}"]`);
+                // console.log(clickedTag);                
                 addActiveTag(clickedTag, 'nav-item--active');
             }
         })
