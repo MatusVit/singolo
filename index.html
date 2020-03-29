@@ -13,85 +13,61 @@
 <body>
     <h1 class="invisible">Singolo</h1>
     <div class="wrapper">
-        
+
         <header class="header">
-            
             <div class="header-logo">
-                SINGOLO <span class="header-logo--color">*</span>
+                SINGOLO
+                <span class="header-logo--color">*</span>
             </div>
             <nav class="header-nav">
                 <ul class="header-nav-list">
                     <li class="header-nav-list-item">
-                        <a class="nav-item nav-item--active" href="#anchor-slider">Home</a>
+                        <a class="item--active" href="">Home</a>
                     </li>
                     <li class="header-nav-list-item">
-                        <a class="nav-item" href="#anchor-services">Services</a>
+                        <a href="">Services</a>
                     </li>
                     <li class="header-nav-list-item">
-                        <a class="nav-item" href="#anchor-portfolio">Portfolio</a>
+                        <a href="">Portfolio</a>
                     </li>
                     <li class="header-nav-list-item">
-                        <a class="nav-item" href="#anchor-about_us">About</a>
+                        <a href="">About</a>
                     </li>
                     <li class="header-nav-list-item">
-                        <a class="nav-item" href="#anchor-contact">Contact</a>
+                        <a href="">Contact</a>
                     </li>
                 </ul>
             </nav>
             <div class="section-bottom section-bottom--header"></div>
-            
-            <div class="burger_menu-button">
-                <img src="assets/images/burger-menu-icon.svg" alt="icon">
-            </div>
-            <div class="burger_menu">
-                <div class="menu-overlay"></div>
-                <div class="burger_menu-panel">
-                    <div class="header-logo header-logo--burger_menu">
-                        SINGOLO <span class="header-logo--color">*</span>
-                    </div> 
-                </div>
-            </div>
         </header>
 
         <main class="main">
-            <div class="anchor" id="anchor-slider"></div>
-            <section id="slider" class="section section-slider" >
-                <div class="slider-content">
-                    <div class = "slider-screen slider-screen-1 slider-active">
-                        <div class="slider-iphone slider-iphone--vert">
-                            <img class="slider-iphone-shadow" src="assets/images/slider-iphone-shadow.png"
-                                alt="slider-iphone-shadow-vert">
-                            <img class="slider-iphone-img slider-iphone-img--vert" src="assets/images/slider-iphone.png"
-                                alt="iPhone">
-                            <div class="slider-iphone-screen slider-iphone-screen--vert"></div>
-                        </div>
-                        <div class="slider-iphone slider-iphone--horiz">
-                            <img class="slider-iphone-shadow--horiz" src="assets/images/slider-iphone-shadow.png"
-                                alt="slider-iphone-shadow-vert">
-                            <img class="slider-iphone-img slider-iphone-img--horiz" src="assets/images/slider-iphone.png"
-                                alt="iPhone">
-                            <div class="slider-iphone-screen slider-iphone-screen--horiz"></div>
-                        </div>
-                    </div>
-                    <div class="slider-screen slider-screen-2">
-                        <img src="assets/images/slider-screen-2.jpg" alt="slider-2">
-                    </div>
+
+            <section class="slider">
+                <div class="slider-iphone slider-iphone--vert">
+                    <img class="slider-iphone-shadow" src="assets/images/slider-iphone-shadow.png"
+                        alt="slider-iphone-shadow-vert">
+                    <img class="slider-iphone-img slider-iphone-img--vert" src="assets/images/slider-iphone.png" alt="iPhone">
+                    <div class="slider-iphone-screen slider-iphone-screen--vert"></div>
+                </div>
+                <div class="slider-iphone slider-iphone--horiz">
+                    <img class="slider-iphone-shadow--horiz" src="assets/images/slider-iphone-shadow.png"
+                        alt="slider-iphone-shadow-vert">
+                    <img class="slider-iphone-img slider-iphone-img--horiz" src="assets/images/slider-iphone.png" alt="iPhone">
+                    <div class="slider-iphone-screen slider-iphone-screen--horiz"></div>
                 </div>
 
-                <div class="slider-controls">
-                    <div class="chev chev--left">
-                        <img src="assets/images/left-arrow.svg" alt="chev">
-                    </div>
-                    <div class="chev chev--right">
-                        <img src="assets/images/left-arrow.svg" alt="chev">
-                    </div>
+                <div class="chev chev--left">
+                    <img src="assets/images/left-arrow.svg" alt="chev">
+                </div>
+                <div class="chev chev--right">
+                    <img src="assets/images/left-arrow.svg" alt="chev">
                 </div>
 
                 <div class="section-bottom section-bottom--slider"></div>
             </section>
 
-            <div class="anchor" id="anchor-services"></div>
-            <section id="services" class="section section-services">
+            <section class="services">
                 <h2 class="section_title">Our Services</h2>
                 <p class="section_text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
                     non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus,
@@ -171,15 +147,15 @@
 
 
             <!-- Part-2 -->
-            <div class="anchor" id="anchor-portfolio"></div>
-            <section id="portfolio" class="section section-portfolio">
+
+            <section class="section portfolio">
                 <div class="section-wrapper">
 
                     <h2 class="section-title">Portfolio</h2>
                     <p class="section-describe">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
                         lacinia odio sem nec elit.</p>
                     <div class="portfolio-tags tags">
-                        <span class="tag tag_bordered tag--active">All</span>
+                        <span class="tag tag_selected">All</span>
                         <span class="tag tag_bordered">Web Design</span>
                         <span class="tag tag_bordered">Graphic Design</span>
                         <span class="tag tag_bordered">Artwork</span>
@@ -207,8 +183,7 @@
                 <div class="section-bottom"></div>
             </section>
 
-            <div class="anchor" id="anchor-about_us"></div>
-            <section id="about_us" class="section section-about_us">
+            <section class="section about_us">
                 <div class="section-wrapper">
 
                     <h2 class="section-title">About Us</h2>
@@ -266,8 +241,8 @@
             </section>
 
             <!-- Part-3 -->
-            <div class="anchor" id="anchor-contact"></div>
-            <section id="contact" class="section section-quote">
+
+            <section class="section-quote">
                 <div class="section-wrapper">
                     <h2 class="section-title">Get a Quote</h2>
                     <p class="section-describe">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
@@ -276,7 +251,7 @@
 
                     <div class="layout-column layout-column--2">
                         <div class="block_form">
-                            <form method="post" id="quote-form">
+                            <form onsubmit="alert('submit!');return false" method="post" id="quote-form">
                                 <input class="form-field" type="text" name="field-name" id="field-name"
                                     placeholder="Name (Required)" required>
                                 <input class="form-field" type="email" name="field-email" id="field-email"
@@ -338,8 +313,9 @@
                 </div>
             </div>
         </footer>
+
+
     </div>
-    <script src="script.js"></script>
 </body>
 
 </html>
