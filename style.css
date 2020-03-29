@@ -962,6 +962,14 @@ a.block_contact-list-item:hover .contact-text {
     height: 58.24vw;
   }
 
+  .chev--left {
+    left: 25px;
+  }
+
+  .chev--right {
+    right: 25px;
+  }
+
   .section-services {
     height: auto;
     padding-bottom: 64px;
@@ -1084,11 +1092,11 @@ a.block_contact-list-item:hover .contact-text {
 
 
   .chev--left {
-    left: 10px;
+    left: 4px;
   }
 
   .chev--right {
-    right: 10px;
+    right: 4px;
   }
 
   .section-services {
@@ -1103,14 +1111,19 @@ a.block_contact-list-item:hover .contact-text {
     padding: 42px 30px 42px 30px;
   }
 
-  .images_container {
+  .section-portfolio .images_container {
     margin-top: 25px;
+    /* height: calc( 34vw * 4 ); */
   }
 
   .section-portfolio .layout-grid3x3 {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 34vw);
+    grid-template-rows: repeat(4, 34vw);
     grid-gap: 14px;
+  }
+
+  .img-block:nth-last-child(-n+4) {
+    display: none;
   }
 
   .section-about_us .section-wrapper {
